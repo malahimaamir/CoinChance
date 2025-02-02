@@ -1,3 +1,4 @@
+import Image from 'next/image'
 export default function CoinChancePage() {
   return (
     <div>
@@ -92,7 +93,7 @@ export default function CoinChancePage() {
             <div className="w-full md:w-1/2">
               <div className="w-48 h-48 mx-auto md:mx-0">
                 <div className="w-full h-full ">
-                  <img
+                  <Image
                     src="https://miro.medium.com/v2/resize:fit:1400/0*vaYFaucS716oqzy4"
                     alt=""
                   />
@@ -195,7 +196,7 @@ export default function CoinChancePage() {
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
             <div className="bg-[#1A1D4D] p-6 rounded-lg shadow-md flex flex-col items-center text-center">
-              <img
+              <Image
                 src="https://s3-alpha-sig.figma.com/img/0c25/40d8/18481ad1ce3d571d47cbe64592492643?Expires=1739145600&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=B-itCSLpxl47jxrpVXNnJbHuwW2WY0Pgsboa1MyWXhcVuNdy30d-5LSxNizhw7qv3hRyaaKw~goCez0y36E3jcyAbvKTnLd0WRv6PJQEd~Ux1XiUn5JhTqreAWKnTxrgmosZHVDGP-TrWf6A-vrt-5gLbkt3-6aT6mBOYMJ6uSpyRj87uZmCiyWtWOxy~BURM44Zau07NgJ7OV30sZzlX-LVUv2wYB1mUnpmADLz7ck83SG~Fhh4sNyQ~BMCpRfXyL8IBvlM3vDqU7K0oq-wEOylNh6TKDHe0GUe5etv086ManXqgDteuxq5BiAgAEl7VrNcF5cCV2TSNk7k~DrDUA__"
                 alt="Lindsey Dokidis"
                 className="w-24 h-24 rounded-full mb-4"
@@ -204,7 +205,7 @@ export default function CoinChancePage() {
               <p className="text-gray-300">Manager</p>
             </div>
             <div className="bg-[#1A1D4D] p-6 rounded-lg shadow-md flex flex-col items-center text-center">
-              <img
+              <Image
                 src="https://s3-alpha-sig.figma.com/img/de2a/5f0f/7b341da4f10c34c8636d72ba12aa437b?Expires=1739145600&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=VyQPuGRKbxtT0Mc5x7cQDkI2m8BQQKrIKS-aky6nKMOGw9~KIxKp-4Gbl2lRiYCaom8jJLH1gVxdiJiHCLtUdZ3AcyoV5EyiQwcs-wj3JIcXmS2eLapgLYjq~0cdUTpzsD1uKHfGi5gFLz0n2Jtw9WBMfx~AGp9qgJci0Z8~Wc-W5tgcgEhXWKvUbxXHW24266aEnvS30HF9bdfWTbhC5utygWEYc99wzq2PC0kD466zRBgfZlIxHefRcT94ZTguFnxmKTYlfBMkRLxVAQxf0luDkA78cuvdlZEIFWLFlZyh5PrfjRIOFk0OGswno6r2mRb6GHmF4wAMHpzdqp3qVQ__"
                 alt="Hanna Dias"
                 className="w-24 h-24 rounded-full mb-4"
@@ -213,7 +214,7 @@ export default function CoinChancePage() {
               <p className="text-gray-300">Senior Manager</p>
             </div>
             <div className="bg-[#1A1D4D] p-6 rounded-lg shadow-md flex flex-col items-center text-center">
-              <img
+              <Image
                 src="https://s3-alpha-sig.figma.com/img/2032/145a/e3f736f94cf1062d4badbfa5ff68a775?Expires=1739145600&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=mc9~QDm1ADOrosKiZ-gN3Mqoc-9BeyFflZKG1b8fY4Z3aLk~~hX5eQOZxLucc1tdTLaXe23sODvKuEMzQSzPoJuhYt-fN-Vf40arR7maq2Lm~pwHDXIGV46~YK4KxH-cQzwcL23Dzq4gE-m6Femau5uPE17LxGWJNHU~2fOvbrOLP1F4uZIcyMIuoLZb50D4cK~WCscuXgZ-5jeLb7LrEhKwktBZo19fxEasFNuwPxJ1oO4oSj9Zso8VcfbyqegZv0PJmF3VN4VtrRsccH1Pgh8jmGSpMT3xOG06z0x1DFDWVdGJtEEEDeBdfAC-4vEoM21phUOl6f1AfgtVlZ3I7g__"
                 alt="Ryan Gouse"
                 className="w-24 h-24 rounded-full mb-4"
@@ -240,7 +241,7 @@ export default function CoinChancePage() {
               className="bg-[#1A1D4D] p-6 rounded-2xl shadow-md text-sm md:text-base"
             >
               <div className="flex items-center mb-3">
-                <img
+                <Image
                   src="https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
                   alt="User"
                   className="w-10 h-10 rounded-full mr-3 object-cover"
@@ -251,8 +252,8 @@ export default function CoinChancePage() {
                 </div>
               </div>
               <p className="text-gray-300">
-                "This is a sample review. The layout, font sizes, and spacing
-                match the reference image."
+                This is a sample review. The layout, font sizes, and spacing
+                match the reference image.
               </p>
               <div className="flex mt-4">
                 {[...Array(5)].map((_, i) => (
@@ -297,7 +298,7 @@ export default function CoinChancePage() {
           <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-10">
             <div>
               <div className="flex items-center space-x-2">
-                <img
+                <Image
                   src="https://s3-alpha-sig.figma.com/img/1948/bec5/220034df6dc94f9002ea827c561eb9e6?Expires=1739145600&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=NfW9OX6MaqQbN~~m2oZ1r1T~BOlLJFMGIbMmhFMLzHi3ZdcnlQnH9fbOsCt0zxyfe5P5dHjMjR0ooAAZ-AZmE-ISpho3AvGis7m7O0BV8xS8Uaz8pLl1uyY1yae9SAQbS-dCSvbERQ18luQGzHZozPsYmHttR2iJJR0xsrqvGKAAjB3YOtZ8IfTr35dpMcu5P8GlQCipGwp1EM0Dn~Hv6xWKg9WZUUO18hINOG6xMRrqtiJAYuOTT7Wjjfms-j4WALcg3UpAWmarF7F-MmtV410CSVs6fAkfnEffTlp66Jjx0Pceh-VDh1N3BBcbUlE422Kv5G2NT0gzbIUBMdMeRw__"
                   alt="Logo"
                   className="w-8 h-8"
@@ -306,7 +307,7 @@ export default function CoinChancePage() {
               </div>
               <p className="mt-4 text-sm leading-6">
                 Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been the industry's standard dummy
+                industry. Lorem Ipsum has been the industrys standard dummy
                 text ever since the 1500s.
               </p>
               <p className="mt-2 text-sm">
