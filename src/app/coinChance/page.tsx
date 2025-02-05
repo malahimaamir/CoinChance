@@ -8,7 +8,7 @@ export default function CoinChancePage() {
         style={{
           backgroundImage:
             'url("https://s3-alpha-sig.figma.com/img/412a/c1ab/a66456e17b8f6a8503f8618934b200a2?Expires=1739145600&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=HBkeqGsUSu~sWOs4rIXET5rMwRqahzlMjbMs9-VhHW6CW08968KFo7uxn5Ckvr4NxId0mY7h5Xom3bSudk6tF~F2fpkgKdD-dAfn606FcZFCQz8xleG0yFYbsxqpLKDifBZNb1~3BzAngxjY3MfjJ-2TaPl8QhOFGFgHiYFDYPoJnwGCY~yXlLJ6HgtFb-Y35R71ZRi-fPxeyQWWxtWMRjb~mPB-Px1OVpb6moNXpXckx7vwfgK-nZhGy4Zcxb2B8RQB15g52KJqCfyDz6HSz1blvfgqrIFdcmfZ5fqb0zAsbhX2ye2fDl~hu6LW8BltfNZGZCKxd7zClmOojsiovg__")',
-          backgroundSize: "cover",
+          backgroundSize: "100% 100%",
           backgroundPosition: "center",
           backgroundRepeat: "no-repeat",
         }}
