@@ -28,7 +28,7 @@ export default function CoinChancePage() {
 
         <main className="flex flex-col items-start text-left px-4 sm:ml-12">
           <h1 className="text-2xl sm:text-4xl text-white font-bold mb-4">Blast Off With Coin Chance</h1>
-          <p className="text-sm sm:text-lg text-gray-300 mb-6">Are you ready to drip into the cloud and <br className="hidden sm:block" /> see your balance rise? Let's drip into success together!</p>
+          <p className="text-sm sm:text-lg text-gray-300 mb-6">Are you ready to drip into the cloud and <br className="hidden sm:block" /> see your balance rise? Lets drip into success together!</p>
           <div className="flex flex-col sm:flex-row gap-4">
             <button className="bg-gradient-to-r from-[#2B1F6B] to-[#674EEB] px-4 sm:px-6 py-2 sm:py-3 rounded-lg text-sm sm:text-lg hover:opacity-90">Play</button>
             <button className="bg-gradient-to-r from-[#2B1F6B] to-[#674EEB] px-4 sm:px-6 py-2 sm:py-3 rounded-lg text-sm sm:text-lg hover:opacity-90">Join CoinChance</button>
