@@ -122,88 +122,71 @@ export default function CoinChancePage() {
         <br />
         <br />
         <section
-          id="presale"
-          className="flex flex-col items-center mt-10 justify-center min-h-min px-8 py-12 text-white bg-[#141853] rounded-2xl mx-4 md:mx-auto max-w-6xl shadow-xl backdrop-blur-xl"
-        >
-          <h2 className="text-2xl md:text-[35px] text-white font-bold text-center mb-8">
-            Participate In Giveaways
-          </h2>
+  id="presale"
+  className="flex flex-col items-center mt-6 sm:mt-10 justify-center min-h-min px-4 sm:px-8 py-8 sm:py-12 text-white bg-[#141853] rounded-2xl mx-2 sm:mx-4 md:mx-auto max-w-6xl shadow-xl backdrop-blur-xl"
+>
+  <h2 className="text-lg sm:text-2xl md:text-[35px] text-white font-bold text-center mb-6 sm:mb-8">
+    Participate In Giveaways
+  </h2>
 
-          <div className="flex flex-col md:flex-row justify-center items-center gap-12 w-full">
-            {/* Image Section */}
-            <div className="w-full md:w-1/2 flex justify-center">
-              <div className="w-72 h-72 md:w-[400px] md:h-[350px]">
-                <Image
-                  width={1000}
-                  height={1000}
-                  src="https://github.com/malahimaamir/CoinChance/blob/main/src/app/coinChance/pngtree-colorful-pie-chart-png-image_4406767-removebg-preview.png?raw=true"
-                  alt="Graph Image"
-                  className="w-full h-full object-cover"
-                  unoptimized={true}
-                />
-              </div>
-            </div>
+  <div className="flex flex-col md:flex-row justify-center items-center gap-8 sm:gap-12 w-full">
+    {/* Image Section */}
+    <div className="w-full md:w-1/2 flex justify-center">
+      <div className="w-52 h-52 sm:w-72 sm:h-72 md:w-[400px] md:h-[350px]">
+        <Image
+          width={1000}
+          height={1000}
+          src="https://github.com/malahimaamir/CoinChance/blob/main/src/app/coinChance/pngtree-colorful-pie-chart-png-image_4406767-removebg-preview.png?raw=true"
+          alt="Graph Image"
+          className="w-full h-full object-cover"
+          unoptimized={true}
+        />
+      </div>
+    </div>
 
-            {/* Table Section */}
-            <div className="w-full md:w-1/2 bg-[#1A1D4D] p-6 md:p-8 rounded-2xl shadow-lg border border-[#674EEB]">
-              <h3 className="text-lg md:text-xl font-bold text-[#674EEB] mb-3">
-                $DICE Has Total Supply Of 420,000,000
-              </h3>
-              <p className="text-gray-300 text-sm md:text-base mb-6">
-                The Mega Dice token serves as the utility token of our platform,
-                enabling users to access premium content, participate in
-                community governance, and redeem exclusive rewards and benefits.
-              </p>
-              <table className="w-full text-sm md:text-base">
-                <thead>
-                  <tr className="border-b border-gray-600">
-                    <th className="text-left pb-3 text-gray-400">Fund</th>
-                    <th className="text-right pb-3 text-gray-400">
-                      % Allocation
-                    </th>
-                    <th className="text-right pb-3 text-gray-400">Token</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  {[
-                    {
-                      fund: "Presale",
-                      allocation: "35%",
-                      token: "147,000,000",
-                    },
-                    {
-                      fund: "Airdrops For Players",
-                      allocation: "15%",
-                      token: "63,000,000",
-                    },
-                    { fund: "LP", allocation: "15%", token: "63,000,000" },
-                    {
-                      fund: "Casino $DICE Pool",
-                      allocation: "15%",
-                      token: "63,000,000",
-                    },
-                    {
-                      fund: "Staking Rewards",
-                      allocation: "10%",
-                      token: "42,000,000",
-                    },
-                    {
-                      fund: "Marketing/KOL Deals",
-                      allocation: "5%",
-                      token: "21,000,000",
-                    },
-                  ].map((row, index) => (
-                    <tr key={index} className="border-b border-gray-700">
-                      <td className="py-2">{row.fund}</td>
-                      <td className="text-right py-2">{row.allocation}</td>
-                      <td className="text-right py-2">{row.token}</td>
-                    </tr>
-                  ))}
-                </tbody>
-              </table>
-            </div>
-          </div>
-        </section>
+    {/* Table Section */}
+    <div className="w-full md:w-1/2 bg-[#1A1D4D] p-4 sm:p-6 md:p-8 rounded-2xl shadow-lg border border-[#674EEB]">
+      <h3 className="text-sm sm:text-lg md:text-xl font-bold text-[#674EEB] mb-3">
+        $DICE Has Total Supply Of 420,000,000
+      </h3>
+      <p className="text-gray-300 text-xs sm:text-sm md:text-base mb-4 sm:mb-6">
+        The Mega Dice token serves as the utility token of our platform,
+        enabling users to access premium content, participate in community
+        governance, and redeem exclusive rewards and benefits.
+      </p>
+
+      {/* Table Wrapper for Small Screens */}
+      <div className="overflow-x-auto">
+        <table className="w-full text-xs sm:text-sm md:text-base">
+          <thead>
+            <tr className="border-b border-gray-600">
+              <th className="text-left pb-3 text-gray-400">Fund</th>
+              <th className="text-right pb-3 text-gray-400">% Allocation</th>
+              <th className="text-right pb-3 text-gray-400">Token</th>
+            </tr>
+          </thead>
+          <tbody>
+            {[
+              { fund: "Presale", allocation: "35%", token: "147,000,000" },
+              { fund: "Airdrops For Players", allocation: "15%", token: "63,000,000" },
+              { fund: "LP", allocation: "15%", token: "63,000,000" },
+              { fund: "Casino $DICE Pool", allocation: "15%", token: "63,000,000" },
+              { fund: "Staking Rewards", allocation: "10%", token: "42,000,000" },
+              { fund: "Marketing/KOL Deals", allocation: "5%", token: "21,000,000" },
+            ].map((row, index) => (
+              <tr key={index} className="border-b border-gray-700">
+                <td className="py-2">{row.fund}</td>
+                <td className="text-right py-2">{row.allocation}</td>
+                <td className="text-right py-2">{row.token}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</section>
+
 
         {/* Roadmap Section */}
         <br />
