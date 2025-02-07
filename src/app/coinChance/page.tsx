@@ -17,11 +17,11 @@ export default function CoinChancePage() {
           backgroundAttachment: "fixed",
         }}
       >
-        <header className="flex items-center justify-between px-4 py-3 text-white bg-[#0E1138] shadow-md">
+        <header className="relative flex items-center justify-between px-4 py-3 text-white bg-[#0E1138] shadow-md">
           <div className="text-lg font-bold">CoinChance</div>
           <nav
-            className={`sm:flex flex-col sm:flex-row items-start sm:items-center gap-4 sm:gap-6 ${
-              menuOpen ? "block" : "hidden"
+            className={`absolute top-full left-0 w-full bg-[#0E1138] flex flex-col sm:flex-row items-center gap-4 sm:gap-6 p-4 shadow-lg transition-all duration-300 ${
+              menuOpen ? "flex" : "hidden"
             }`}
           >
             <a href="#presale" className="hover:text-gray-300 transition">
